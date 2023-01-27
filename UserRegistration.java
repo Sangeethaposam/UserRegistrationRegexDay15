@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserRegistration {
 	public static boolean isValidUsername(String name)
 	{
-		String regex = "^[A-Za-z]\\w+{3,29}$";
+		String regex = "^[A-Za-z]{3,29}$";
 		Pattern p = Pattern.compile(regex);
 		if (name == null) {
 			return false;
