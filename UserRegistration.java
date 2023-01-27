@@ -15,7 +15,7 @@ public class UserRegistration {
 		return m.matches();
 	}
 	public static boolean isValidEmail(String email) {
-		String regex =  "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+		String regex =  "^[a-zA-Z0-9][+_.-]+@[a-zA-Z0-9.-]+$";
 		Pattern p = Pattern.compile(regex);
 		if (email == null) {
 			return false;
@@ -24,7 +24,7 @@ public class UserRegistration {
 		return m.matches();
 	}
 	public static boolean isValidMobileFormat(String mobileNumber) {
-		String regex =  "^([9]{1})([1]{1})([0-9]{10})$";
+		String regex =  "^(91 )([0-9]{10})$";
 		Pattern p = Pattern.compile(regex);
 		if (mobileNumber == null){
 			return false;
