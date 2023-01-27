@@ -8,6 +8,7 @@ public class UserRegistrationMainUc {
 	public static void main(String[] args)
 	{
         Scanner sc =new Scanner(System.in);
+	Scanner sc1 =new Scanner(System.in);
         UserRegistration uc = new UserRegistration();
         System.out.println("Enter the First Name: " );
 		String FirstName = sc.next();
@@ -22,7 +23,7 @@ public class UserRegistrationMainUc {
 		System.out.println(uc.isValidEmail(email));
 		
 		System.out.println("Enter the Mobile number: " );
-		String mobileNumber = sc.next();
+		String mobileNumber = sc1.nextLine();
 		System.out.println(uc.isValidMobileFormat(mobileNumber));
 		
 		System.out.println("Enter the password: " );
