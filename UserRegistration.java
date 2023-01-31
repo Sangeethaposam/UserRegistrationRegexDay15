@@ -42,7 +42,7 @@ public class UserRegistration {
 		return m.matches();
 	}
 	public  boolean isValidAllEmailSamples(String emails) {
-	    String regex =  "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+	    String regex =  "^[0-9a-zA-Z]+([_+-.]{1}[a-z0-9A-Z]+)*[@][a-zA-Z]+[.][a-z]{2,4}([.][a-z]{2})?$";
 		Pattern p = Pattern.compile(regex);
 		if (emails == null) {
 			return false;
